@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="116.6022 178.0727 301.4168 50.8773" width="301.417px" height="50.8773px">
+  <defs>
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath838">
+      <path d="M 0,500 H 500 V 0 H 0 Z" id="path836"/>
+    </clipPath>
+  </defs>
+  <g id="g832" transform="matrix(1.3333330154418945, 0, 0, -1.3333330154418945, -196.61744689941406, 488.10864257812494)">
+    <g id="g834" clip-path="url(#clipPath838)">
+      <g id="g840" transform="translate(438.4378,208.1411)">
+        <path d="m 0,0 h -180.983 c -2.931,0 -5.307,2.376 -5.307,5.307 0,2.931 2.376,5.306 5.307,5.306 H 0 c 2.931,0 5.307,-2.375 5.307,-5.306 C 5.307,2.376 2.931,0 0,0" style="fill:#e5e7e8;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path842"/>
+      </g>
+      <g id="g844" transform="translate(347.9462,194.369)">
+        <path d="m 0,0 v 0 c -10.537,0 -19.079,8.542 -19.079,19.079 0,10.537 8.542,19.079 19.079,19.079 v 0 c 10.537,0 19.079,-8.542 19.079,-19.079 C 19.079,8.542 10.537,0 0,0" style="fill:#e5e7e8;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path846"/>
+      </g>
+      <g id="g848" transform="translate(347.9461,197.1954)">
+        <path d="m 0,0 c -8.961,0 -16.252,7.291 -16.252,16.252 0,8.962 7.291,16.253 16.252,16.253 8.961,0 16.252,-7.291 16.252,-16.252 C 16.252,7.291 8.961,0 0,0" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path850"/>
+      </g>
+      <g id="g852" transform="translate(253.9938,194.369)">
+        <path d="m 0,0 v 0 c -10.537,0 -19.079,8.542 -19.079,19.079 0,10.537 8.542,19.079 19.079,19.079 10.537,0 19.079,-8.542 19.079,-19.079 C 19.079,8.542 10.537,0 0,0" style="fill:#e5e7e8;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path854"/>
+      </g>
+      <g id="g856" transform="translate(253.9938,197.1954)">
+        <path d="m 0,0 c -8.962,0 -16.252,7.291 -16.252,16.252 0,8.962 7.29,16.253 16.252,16.253 8.961,0 16.252,-7.291 16.252,-16.252 C 16.252,7.291 8.961,0 0,0" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path858"/>
+      </g>
+      <g id="g860" transform="translate(441.8985,194.369)">
+        <path d="m 0,0 v 0 c -10.537,0 -19.079,8.542 -19.079,19.079 0,10.537 8.542,19.079 19.079,19.079 10.537,0 19.079,-8.542 19.079,-19.079 C 19.079,8.542 10.537,0 0,0" style="fill:#e5e7e8;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path862"/>
+      </g>
+      <g id="g864" transform="translate(441.8985,197.1954)">
+        <path d="m 0,0 c -8.962,0 -16.252,7.291 -16.252,16.252 0,8.962 7.29,16.253 16.252,16.253 8.962,0 16.252,-7.291 16.252,-16.252 C 16.252,7.291 8.962,0 0,0" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path866"/>
+      </g>
+    </g>
+  </g>
+</svg>

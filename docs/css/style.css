@@ -4,21 +4,38 @@ body {
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --color-cyan: #28f9fe; /* Bright cyan - primary accent */
+  --color-blue: #6870ff; /* Periwinkle blue - secondary accent */
+  --color-purple: #9d4edd; /* Purple - tertiary accent */
+  --color-dark: #140c25; /* Dark purple - background */
+  --color-darker: #0a0613; /* Darker purple - shadows/overlay */
+  --color-white: #f7f3fc; /* White - text */
+
+  /* Semantic color variables */
+  --text-title: var(--color-white);
+  --text-primary: var(--color-cyan);
+  --text-secondary: var(--color-blue);
+  --inactive: #394780;
+  --background: var(--color-dark);
+  --background-secondary: var(--color-darker);
 }
 
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 
-  background-color: #f0f0f0;
-  color: darkolivegreen;
-  background: url(../img/arm.gif) no-repeat center center fixed;
+  color: var(--text-secondary);
+  background-color: var(--background);
+  /* background: url(../img/arm.gif) no-repeat center center fixed; */
   background-size: cover;
 
   /* make the background look like it's viewed through a semi transparent shadow mask */
-  &::before {
+  /* &::before {
     content: "";
     position: fixed;
     top: 0;
@@ -30,11 +47,221 @@ body {
     background: radial-gradient(circle, #151515d0 60%, #000 60%);
     background-size: 12px 12px;
     background-position: center;
-  }
+  } */
 }
 
 .container {
+  position: relative;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 24vh auto;
   padding: 20px;
+  padding-bottom: 40px;
+  background-color: var(--background-secondary);
+}
+
+@media (min-width: 620px) {
+  .container {
+    padding: 40px;
+  }
+}
+
+.content .content-block {
+  margin-bottom: 6rem;
+}
+
+.container img {
+  max-width: 100%;
+}
+
+.media {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.media-caption {
+  display: block;
+  max-width: 90%;
+  margin: 1em auto 0 auto;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.youtube-embed {
+  position: relative;
+  height: 0;
+  padding-top: 56%;
+  overflow: hidden;
+}
+.youtube-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Typography Styles */
+.container h1 {
+  font-size: 2.5rem;
+  font-weight: 350;
+  margin-bottom: 4rem;
+  line-height: 1.2;
+  color: var(--text-title);
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-title);
+}
+
+.container h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-title);
+}
+
+.container p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.container a {
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.container ul,
+.container ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.container li {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.container li::marker {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--text-title);
+}
+
+.container blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--blue-small-elements);
+  background-color: var(--transp-black-02);
+}
+
+.container blockquote p {
+  margin: 0;
+  font-style: italic;
+}
+
+/* Add subtle text selection style */
+::selection {
+  background: var(--blue-small-elements);
+  color: white;
+}
+
+.donation {
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.donation .gauge {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.donation .gauge .gauge-scale {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.donation .gauge .gauge-pointer {
+  position: absolute;
+  width: 38%;
+  bottom: -25%;
+  left: calc(50% - 5%);
+  transform-origin: 15% 47%;
+  transform: rotate(180deg);
+}
+
+.donation .donation-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  flex-basis: auto;
+}
+.donation .donation-info p {
+  font-size: 1.5rem;
+  width: 25%;
+}
+.donation .donation-info .donation-current {
+  font-size: 2rem;
+  text-align: center;
+}
+.donation .donation-info .donation-goal {
+  text-align: right;
+}
+
+.donation-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.donation-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-cyan);
+  background: transparent;
+  border: 2px solid var(--color-cyan);
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(40, 249, 254, 0.2),
+    inset 0 0 10px rgba(40, 249, 254, 0.2);
+  text-shadow: 0 0 10px var(--color-cyan);
+}
+
+.donation-button:hover {
+  color: var(--color-darker);
+  background-color: var(--color-cyan);
+  box-shadow: 0 0 20px rgba(40, 249, 254, 0.4), 0 0 40px rgba(40, 249, 254, 0.4),
+    inset 0 0 10px rgba(40, 249, 254, 0.4);
+  text-shadow: none;
+  transform: translateY(-2px);
+}
+
+.donation-button:active {
+  transform: translateY(0);
+  box-shadow: 0 0 10px rgba(40, 249, 254, 0.2),
+    inset 0 0 10px rgba(40, 249, 254, 0.2);
 }
