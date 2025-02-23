@@ -35,10 +35,10 @@
         <div class="content-block funding">
           <h2>We need support</h2>
           <p>
-            Chrigu and Mättu from team Helix paid the whole price for the table.
-            If you're enjoying the table, please consider donating against them.
-            If donaters win, the remaining money will be but to drinks and an
-            organised armwreslting event.
+            Chrigu and Mättu from team Helix paid the whole price of CHF
+            500.&mdash; for the table. If you're enjoying the table, please
+            consider donating against them. If donors win, the remaining money
+            will be but to drinks and an organised armwreslting event.
           </p>
         </div>
         <div class="content-block donation">
@@ -49,16 +49,41 @@
             </div>
           </div>
           <div class="donation-info">
-            <p class="donation-amount">0.-</p>
+            <p class="donation-amount">0.&mdash;</p>
             <p class="donation-current">
-              Currently
-              <span class="current-value">0.-</span>
+              <span class="current-value">0.&mdash;</span>
             </p>
-            <p class="donation-goal">Goal: 500.-</p>
+            <p class="donation-goal">500.&mdash;</p>
           </div>
           <div class="donation-add">
             <button class="donation-button">Donate now</button>
           </div>
+        </div>
+        <div class="content-block donors">
+          <div class="donor-column">
+            <h3>Donors</h3>
+            <ul class="donor-list dynamic-donor-list"></ul>
+          </div>
+          <div class="Opponents-column">
+            <h3>Oponents</h3>
+            <ul class="donor-list">
+              <li class="donor">
+                <span class="donor-name">Chrigu</span>
+                <span class="donor-amount">250.&mdash;</span>
+              </li>
+              <li class="donor">
+                <span class="donor-name">Mättu</span>
+                <span class="donor-amount">250.&mdash;</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-block">
+          <h2>Bounty</h2>
+          <p class="donor-bounty">
+            All donors will be listed on the legs of the table. The more the
+            amount, the bigger the name.
+          </p>
         </div>
         <div class="content-block rules">
           <h2>Rules</h2>
@@ -84,14 +109,21 @@
               <p>
                 The arm wrestling table is designed to prevent injuries. As long
                 as some basic rules are followed, the risk of injury is minimal.
-                Check out the video below to learn the basic rules.
+                Watch the short
+                <a
+                  href="https://www.youtube.com/watch?v=5GScLlLBAFU"
+                  class="expand-video"
+                >
+                  intro video (2:41 mins)</a
+                >
+                to learn the basic rules.
               </p>
             </li>
           </ol>
-          <!-- <div class="video">
+          <div class="video collapsed">
             <div class="media youtube-embed">
               <iframe
-                src="https://www.youtube.com/embed/5GScLlLBAFU"
+                data-src="https://www.youtube.com/embed/5GScLlLBAFU"
                 frameborder="0"
                 allowfullscreen
               ></iframe>
@@ -100,10 +132,10 @@
               >Watch the video, in order to prevent getting hurt, or hurt
               anyone.</small
             >
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="./js/updateDonations.js" defer></script>
+  <script src="./js/script.js" defer></script>
 </html>

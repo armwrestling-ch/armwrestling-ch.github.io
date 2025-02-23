@@ -31,37 +31,21 @@ body {
 
   color: var(--text-secondary);
   background-color: var(--background);
-  /* background: url(../img/arm.gif) no-repeat center center fixed; */
-  background-size: cover;
-
-  /* make the background look like it's viewed through a semi transparent shadow mask */
-  /* &::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
-    background: radial-gradient(circle, #151515d0 60%, #000 60%);
-    background-size: 12px 12px;
-    background-position: center;
-  } */
 }
 
 .container {
   position: relative;
-  max-width: 800px;
-  margin: 24vh auto;
+  max-width: 750px;
+  margin: 0 auto;
   padding: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
   background-color: var(--background-secondary);
 }
 
 @media (min-width: 620px) {
   .container {
-    padding: 40px;
+    margin: 12vh auto;
+    padding: 5rem;
   }
 }
 
@@ -200,10 +184,11 @@ body {
 .donation .gauge .gauge-pointer {
   position: absolute;
   width: 38%;
-  bottom: -25%;
+  bottom: -24%;
   left: calc(50% - 5%);
-  transform-origin: 15% 47%;
+  transform-origin: 14% 47%;
   transform: rotate(180deg);
+  transition: transform 0.5s ease;
 }
 
 .donation .donation-info {
@@ -233,6 +218,8 @@ body {
 }
 
 .donation-button {
+  position: relative;
+  overflow: hidden;
   display: inline-block;
   padding: 1rem 2rem;
   font-size: 1.25rem;
@@ -264,4 +251,62 @@ body {
   transform: translateY(0);
   box-shadow: 0 0 10px rgba(40, 249, 254, 0.2),
     inset 0 0 10px rgba(40, 249, 254, 0.2);
+}
+
+.donation-button::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 500%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(40, 249, 254, 0.1),
+    rgba(40, 249, 254, 0.3),
+    rgba(40, 249, 254, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: glimmer 4s linear infinite;
+}
+
+@keyframes glimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.donation-button:hover::before {
+  animation: none;
+  opacity: 0;
+}
+
+.content .content-block.donation {
+  margin-bottom: 2rem;
+}
+
+.donors {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-top: 2rem;
+  gap: 2.5rem;
+}
+
+.donors .donor-column {
+  width: 33.333%;
+}
+
+.video.collapsed {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+.video {
+  max-height: auto;
 }
