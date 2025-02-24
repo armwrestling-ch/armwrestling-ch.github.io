@@ -1,0 +1,21 @@
+{
+  "name": "DG arm wrestling for everyone",
+  "short_name": "DG arm wrestling",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#28f9fe",
+  "background_color": "#160d28",
+  "display": "standalone"
+}
