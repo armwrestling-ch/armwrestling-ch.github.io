@@ -52,7 +52,12 @@ body {
 }
 
 .content .content-block {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
+}
+@media (min-width: 620px) {
+  .content .content-block {
+    margin-bottom: 6rem;
+  }
 }
 
 .container img {
@@ -88,11 +93,18 @@ body {
 
 /* Typography Styles */
 .container h1 {
+  margin-top: 1rem;
   font-size: 3.5rem;
+  margin-bottom: 2rem;
   font-weight: 350;
-  margin-bottom: 4rem;
   line-height: 1.2;
   color: var(--text-title);
+}
+@media (min-width: 620px) {
+  .container h1 {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
 }
 
 .container h2 {
@@ -197,12 +209,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 5%;
   flex-basis: auto;
 }
 .donation .donation-info p {
   font-size: 1.5rem;
-  width: 25%;
+  width: 30%;
 }
 .donation .donation-info .donation-current {
   font-size: 2rem;
