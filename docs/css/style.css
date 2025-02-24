@@ -222,6 +222,7 @@ body {
 .donation .donation-info p {
   font-size: 1.5rem;
   width: 30%;
+  margin-top: 1.5rem;
 }
 .donation .donation-info .donation-current {
   font-size: 2rem;
