@@ -16,7 +16,7 @@
   };
   if (handleElement && donationCurrent && donorList) {
     const updateDonations = () => {
-      const url = "./api/donations.cvs";
+      const url = "./api/donations.csv";
       fetch(url)
         .then((response) => response.text())
         .then((data) => {
