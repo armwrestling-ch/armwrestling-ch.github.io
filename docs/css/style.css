@@ -19,6 +19,7 @@ body {
 :root {
   --color-cyan: #28f9fe; /* Bright cyan - primary accent */
   --color-blue: #6870ff; /* Periwinkle blue - secondary accent */
+  --color-blue-light: #94a0ff; /* Lighter Periwinkle blue - secondary accent */
   --color-purple: #9d4edd; /* Purple - tertiary accent */
   --color-dark: #140c25; /* Dark purple - background */
   --color-darker: #0a0613; /* Darker purple - shadows/overlay */
@@ -27,7 +28,7 @@ body {
   /* Semantic color variables */
   --text-title: var(--color-white);
   --text-primary: var(--color-cyan);
-  --text-secondary: var(--color-blue);
+  --text-secondary: var(--color-blue-light);
   --inactive: #394780;
   --background: var(--color-dark);
   --background-secondary: var(--color-darker);
