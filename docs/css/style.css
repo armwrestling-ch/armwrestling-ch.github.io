@@ -352,3 +352,16 @@ body {
 .video {
   max-height: auto;
 }
+
+.donor-bounty-highlight {
+  position: relative;
+  padding: 1rem;
+  margin: 2rem 3em;
+  background-color: var(--color-darker);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px var(--color-cyan);
+}
+
+.donor-bounty-highlight h2 {
+  margin-top: 0;
+}
