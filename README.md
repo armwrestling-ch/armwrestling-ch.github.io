@@ -1,2 +1,3 @@
 # armwrestling-ch.github.io
-page
+
+Static html pages for table page
