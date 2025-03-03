@@ -356,7 +356,7 @@ body {
 .donor-bounty-highlight {
   position: relative;
   padding: 1rem;
-  margin: 2rem 3em;
+  margin: 2rem;
   background-color: var(--color-darker);
   border-radius: 0.5rem;
   box-shadow: 0 0 10px var(--color-cyan);
@@ -364,4 +364,11 @@ body {
 
 .donor-bounty-highlight h2 {
   margin-top: 0;
+}
+
+@media (min-width: 620px) {
+  .content .donor-bounty-highlight {
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+  }
 }
