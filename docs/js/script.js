@@ -1,5 +1,6 @@
 (() => {
-  const formatPrice = (price) => price.toFixed(2).replace(/.00$/g, ".\u2014").replace(".", "\u200B.\u200B");
+  const formatPrice = (price) =>
+    price.toFixed(2).replace(/.00$/g, ".\u2014").replace(".", "\uFEFF.\uFEFF");
 
   // Fetch the data from the server
   const handleElement = document.querySelector(".gauge-pointer");
